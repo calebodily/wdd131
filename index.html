@@ -4,11 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Cale Bodily</title>
+    <meta author="Cale Bodily" description="A home page for WDD 131 - Dynamic Web Fundamentals by Cale Bodily">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Cale Bodily!</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/cale-bodily-297374371" alt="LinkedIn Cale Bodily">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" alt="Canvas Home Page">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng"
+                        alt="2 Nephi: 25">2 Nephi: 25</a></li>
+                <li><a href="https://www.google.com/" alt="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Cale Bodily</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p class="paragraph1">My name is Cale. I was born in Utah and have lived there my whole life. I am currently
+                working as a custodial janitor at an elementary school. My hobbies include board games and video games!
+            </p>
+            <img src="images/profile-picture.jpg" alt="Cale Bodily">
+            <h3>Utah, USA</h3>
+            <img src="images/utah-flag.jpg" alt="Utah Flag">
+            <p class="paragraph2">Utah is known for its mountains and ski resorts. As a popular tourist destination
+                people come here to go camping, hiking, skiing, and visit popular locations such as the Grand Canyon.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/" alt="mdn">mdn</a></li>
+                <li><a href="https://web.dev/" alt="web.dev">web.dev</a></li>
+                <li><a href="https://www.w3schools.com/" alt="w3schools">w3schools</a></li>
+                <li><a href="https://www.theodinproject.com/" alt="The Odin Project">The Odin Project</a></li>
+                <li><a href="https://www.freecodecamp.org/" alt="free code camp">Free Code Camp</a></li>
+                <li><a href="https://scrimba.com/home" alt="Scrimba">Scrimba</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Cale Bodily, UT
+        </p>
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
 </body>
 
 </html>
