@@ -14,9 +14,9 @@
     padding: 10px;
 }
 
-header nav {
+header {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 nav ul {
