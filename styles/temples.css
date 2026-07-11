@@ -13,13 +13,17 @@ header {
     text-align: center;
 }
 
+header p {
+    font-size: 2em;
+}
+
 #menu {
     font-size: 25px;
     border: 0;
     background: none;
     position: relative;
     left: 180px;
-    bottom: 57px;
+    bottom: 70px;
 }
 
 #menu::before {
