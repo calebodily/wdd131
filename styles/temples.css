@@ -34,14 +34,14 @@ header p {
     content: "❌";
 }
 
-.navigation {
+nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
 }
 
-.navigation a {
+nav a {
     display: none;
     padding: 1rem;
     text-align: center;
