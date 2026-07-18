@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Singapore</title>
+    <meta name="description" content="Content related to Singapore including weather and other data">
+    <meta name="author" content="Cale Bodily">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Singapore</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/singapore-large.webp" media="(min-width: 600px)">
+            <img src="images/singapore-small.webp" alt="Singapore statue">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <p>Area:</p>
+            <p>744.3 square kilometers</p>
+            <p>Population:</p>
+            <p>6,110,000</p>
+            <p>Captial:</p>
+            <p>Singapore</p>
+            <p>Languages:</p>
+            <p>English, Malay, Mandarin, Tamil</p>
+            <p>Currency:</p>
+            <p>Singapore Dollar</p>
+            <p>Time Zone:</p>
+            <p>GMT+8</p>
+            <p>Calling Code:</p>
+            <p>+65</p>
+            <p>Internet TLD:</p>
+            <p>.sg</p>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/cloud-lightning-rain-fill.svg" alt="cloud with lightning rain">
+            <p>Temperature:</p>
+            <p id="temp">87 °C</p>
+            <p>Conditions:</p>
+            <p>Thunderstorm</p>
+            <p>Wind:</p>
+            <p id="wind">4 mph</p>
+            <p>Wind Chill:</p>
+            <p id="windchill"></p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Cale Bodily, UT
+        </p>
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
