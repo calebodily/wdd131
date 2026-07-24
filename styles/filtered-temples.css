@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #D67A20;
+    --secondary-color: #78C1D6;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header p {
+    font-size: 2em;
+}
+
+#menu {
+    font-size: 25px;
+    border: 0;
+    background: none;
+    position: relative;
+    left: 180px;
+    bottom: 70px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.open a {
+    display: block;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+figure,
+main h1 {
+    display: grid;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+}
+
+section {
+    border: 1px solid black;
+    margin: 2px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}

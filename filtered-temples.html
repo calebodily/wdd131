@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Gallery</title>
+    <meta name="description" content="A temple gallery of The Church of Jesus Christ of Latter Day Saints temples">
+    <meta name="author" content="Cale Bodily">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu" aria-label="Navigation"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="filtered-temples.html" title="Home" id="home">Home</a></li>
+                <li><a href="filtered-temples.html" title="Old" id="old">Old</a></li>
+                <li><a href="filtered-temples.html" title="New" id="new">New</a></li>
+                <li><a href="filtered-temples.html" title="Large" id="large">Large</a></li>
+                <li><a href="filtered-temples.html" title="Small" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <figure class="card"></figure>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Cale Bodily, UT
+        </p>
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
