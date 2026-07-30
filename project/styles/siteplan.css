@@ -1,0 +1,19 @@
+h1 {
+    background-color: #B85900;
+    font-family: cinzel;
+    font-size: 1.5em;
+    padding: 5px;
+    text-align: center;
+}
+
+p {
+    background-color: #0057B8;
+    font-family: inter;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 100%
+}
