@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
-    <meta name="description" content="A page to submit feedback for product review">
+    <meta name="description" content="A page form to submit feedback for product review for different products">
     <meta name="author" content="Cale Bodily">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -20,23 +20,20 @@
             <div>
                 <label>Product Name
                     <select name="product" id="product" required>
-                        <option value="selectproduct" disabled selected>Choose a Product ...</option>
+                        <option value="selectproduct" disabled selected>Select a Product ...</option>
                     </select>
                 </label>
             </div>
             <div>
                 <label>Overall Rating
-                    <span id="rangevalue">0</span>
-                    <input type="range" id="rating" name="rating" min="0" max="5" value="0" step="1" list="rangevalues"
-                        required>
-                    <datalist id="rangevalues">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </datalist>
+                    <div class="stars">
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label
+                            for="threestar"></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    </div>
                 </label>
             </div>
             <div>
@@ -53,7 +50,7 @@
                 </label>
             </div>
             <div>
-                <label>Written Review<input type="textarea" id="written" name="written"></label>
+                <label>Written Review<textarea id="written" name="written" rows="6"></textarea></label>
             </div>
             <div class="fix">
                 <label>Your Name<input type="text" id="name" name="name"></label>

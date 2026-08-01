@@ -5,17 +5,6 @@ document.getElementById('currentYear').innerHTML = currentYear;
 const lastModified = new Date(document.lastModified);
 document.getElementById('lastModified').innerHTML = document.lastModified;
 
-// range scale
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("rating");
-
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
-}
-
 // array products select
 const products = [
     {

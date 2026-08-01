@@ -34,13 +34,17 @@ form div {
     border-bottom: none;
 }
 
+form .stars {
+    border: none;
+}
+
 form .fix {
     border-bottom: solid 1px black;
 }
 
 form input[type="range"],
 form input[type="date"],
-form input[type="textarea"],
+form textarea,
 form input[type="text"],
 form input[type="submit"],
 form select {
@@ -49,6 +53,41 @@ form select {
     padding-left: 5px;
     border: solid 1px black;
     border-radius: 6px;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
 }
 
 form input[type="checkbox"] {
