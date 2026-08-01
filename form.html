@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="A page to submit feedback for product review">
+    <meta name="author" content="Cale Bodily">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p>Product Review</p>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div>
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option value="selectproduct" disabled selected>Choose a Product ...</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>Overall Rating
+                    <span id="rangevalue">0</span>
+                    <input type="range" id="rating" name="rating" min="0" max="5" value="0" step="1" list="rangevalues"
+                        required>
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                </label>
+            </div>
+            <div>
+                <label>Date of Installation<input type="date" name="date" id="date" required></label>
+            </div>
+            <div>
+                <label>Which features did you find useful in the product? (check all that apply)
+                    <label><input type="checkbox" id="durability" name="durability"
+                            value="durability">Durability</label>
+                    <label><input type="checkbox" id="ease" name="ease" value="ease">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance"
+                            value="performance">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+                </label>
+            </div>
+            <div>
+                <label>Written Review<input type="textarea" id="written" name="written"></label>
+            </div>
+            <div class="fix">
+                <label>Your Name<input type="text" id="name" name="name"></label>
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Cale Bodily, UT
+        </p>
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
