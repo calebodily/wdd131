@@ -1,0 +1,11 @@
+:root {
+    --primarycolor: #B85900;
+    --secondarycolor: #0057B8;
+}
+
+footer {
+    background-color: var(--secondarycolor);
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
