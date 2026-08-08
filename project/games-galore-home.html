@@ -9,6 +9,7 @@
         content="A page that contains a table of all the board games contained on the other pages and a form for a newsletter signup">
     <meta name="author" content="Cale Bodily">
     <link rel="stylesheet" href="styles/games-galore.css">
+    <link rel="stylesheet" href="styles/games-galore-large.css">
     <script src="scripts/games-galore-home.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +24,17 @@
 <body>
     <header>
         <img src="images/games-galore-logo.webp" alt="game galore logo">
-        <nav>
-            <a href="games-galore-home.html">Home</a>
-            <a href="games-galore-board-game.html">Board Games</a>
-            <a href="games-galore-info.html">Info</a>
+        <button id="menu" aria-label="Navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="games-galore-home.html">Home</a></li>
+                <li><a href="games-galore-board-game.html">Board Games</a></li>
+                <li><a href="games-galore-info.html">Info</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div class="banner">
             <a href="games-galore-board-game.html">Board Games Info</a>
             <img src="images/ankh-gods-of-egypt-cover.webp" alt="ankh gods of egypt cover">
             <img src="images/beacon-patrol-cover.webp" alt="beacon patrol cover">
@@ -39,7 +43,7 @@
             <img src="images/casting-shadows-cover.webp" alt="casting shadows cover">
             <img src="images/catan-cover.webp" alt="catan cover">
         </div>
-        <div>
+        <div class="table">
             <table>
                 <thead>
                     <tr>
@@ -118,11 +122,21 @@
                 </tbody>
             </table>
         </div>
-        <div>
+        <div class="image">
             <img src="images/cosmolancer-contents.webp" alt="cosmolancer board game">
+            <figcaption>Cosmolancer Contents</figcaption>
         </div>
-        <div>
+        <div class="image">
             <img src="images/toy-battle-contents.webp" alt="toy battle board game">
+            <figcaption>Toy Battle Contents</figcaption>
+        </div>
+        <div class="image hide">
+            <img src="images/spooktacular-contents.webp" alt="spooktacular board game">
+            <figcaption>Spooktacular Contents</figcaption>
+        </div>
+        <div class="image hide">
+            <img src="images/silver-and-gold-contents.webp" alt="silver and gold board game">
+            <figcaption>Silver and Gold Contents</figcaption>
         </div>
         <form method="get" action="">
             <legend>Newsletter Sign Up</legend>

@@ -1,0 +1,43 @@
+@media only screen and (min-width: 600px) {
+
+    #menu {
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        right: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    table {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    table {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Galore Home Page</title>
+    <meta name="description"
+        content="A page that contains a table of all the board games contained on the other pages and a form for a newsletter signup">
+    <meta name="author" content="Cale Bodily">
+    <link rel="stylesheet" href="styles/games-galore.css">
+    <link rel="stylesheet" href="styles/games-galore-large.css">
+    <script src="scripts/games-galore-home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/games-galore-logo.webp" alt="game galore logo">
+        <button id="menu" aria-label="Navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="games-galore-home.html">Home</a></li>
+                <li><a href="games-galore-board-game.html">Board Games</a></li>
+                <li><a href="games-galore-info.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <a href="https://www.amazon.com/">Amazon</a>
+            <a href="https://boardgamegeek.com/">Board Game Geek</a>
+        </div>
+        <form method="get" action="">
+            <legend>Complaint/Suggestion Form</legend>
+            <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label>Type of Feedback*</label>
+            <label><input type="radio" name="type" value="bugs" required>Bugs with site</label>
+            <label><input type="radio" name="type" value="information" required>Incorrect Information Displayed</label>
+            <label><input type="radio" name="type" value="suggestion" required>Suggestion</label>
+            <label>Feedback*<textarea name="feedback" rows="6" cols="50" placeholder="Type your issue/complaint here..." required></textarea></label>
+            <input type="submit" value="Give Feedback">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Cale Bodily, UT
+        </p>
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

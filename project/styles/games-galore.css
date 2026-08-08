@@ -1,11 +1,179 @@
 :root {
     --primarycolor: #B85900;
     --secondarycolor: #0057B8;
+    --fontheading: cinzel;
+    --fontbody: inter;
+}
+
+header {
+    background-color: var(--primarycolor);
+    display: flex;
+    font-family: var(--fontheading);
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    width: 200px;
+    border: none;
+}
+
+#menu {
+    width: 100%;
+    font-size: 50px;
+    border: 0;
+    background: none;
+    position: relative;
+    text-align: center;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    right: 50%;
+}
+
+.open a {
+    display: block;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.banner {
+    grid-column: 1 / 3;
+    background-color: var(--secondarycolor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.banner a {
+    color: white;
+    grid-column: 1 / 7;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fontheading);
+    font-size: 1.5em;
+}
+
+.banner img {
+    width: 90%;
+    border: 2px solid var(--primarycolor);
+    margin-bottom: 5px;
+}
+
+.table {
+    grid-row: 2 / 6;
+}
+
+table th {
+    font-family: var(--fontheading);
+    border: 1px solid black;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border: 2px solid var(--primarycolor);
+}
+
+figcaption {
+    font-family: var(--fontbody);
+    text-align: center;
+}
+
+form {
+    grid-column: 1 / 3;
+    padding: 50px 0;
+}
+
+form label {
+    display: block;
+    margin: 10px;
+    border-bottom: solid 1px black;
+    font-family: var(--fontbody);
+}
+
+form legend {
+    font-family: var(--fontheading);
+}
+
+form input[type="text"] {
+    margin-left: 10px;
+}
+
+form input[type="email"] {
+    margin-left: 50px;
+}
+
+form input[type="submit"] {
+    margin-left: 120px;
+    padding: 5px;
+    background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
+    color: white;
 }
 
 footer {
     background-color: var(--secondarycolor);
+    color: white;
     padding: 5px;
     margin-top: 10px;
     text-align: center;
+}
+
+.sort {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondarycolor);
+}
+
+.sort li {
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.sort a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+}
+
+.sort a:hover {
+    color: black;
 }
