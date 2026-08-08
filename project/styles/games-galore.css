@@ -60,7 +60,7 @@ nav a:hover {
     color: white;
 }
 
-main {
+#homegrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -158,6 +158,7 @@ footer {
     grid-column: 1 / 3;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--secondarycolor);
 }
 
@@ -166,6 +167,8 @@ footer {
     text-align: center;
     list-style-type: none;
     padding: 10px 0;
+    border: solid 1px black;
+    margin: 2px;
 }
 
 .sort a {
@@ -176,4 +179,19 @@ footer {
 
 .sort a:hover {
     color: black;
+}
+
+.game-card {
+    border: solid 1px black;
+    text-align: center;
+    font-family: var(--fontbody);
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-family: var(--fontheading);
+}
+
+.card img {
+    border: none;
 }
